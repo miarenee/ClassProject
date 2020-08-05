@@ -4,7 +4,10 @@ August 9, 2020
 CIS 245
 Class Project: Final Draft
 
-This program prompts the user for their zipcode
+This program prompts the user for their city or zip code in the function getData(). The function
+getWeather requests data from openweathermap.org. The weather for the location given is displayed 
+using the displayWeather function. If user input is invalid, an error message is displayed and the
+program prompts the user again. The user will be prompted for city/zip code until a '0' is entered.
 '''
 
 import requests
@@ -13,7 +16,7 @@ import json
 def getData():
 # Function getData() gets the user input. Exits program when user enters "0".
 	print("\nWhat's the weather? ")
-	place = input("Enter your city, zip code or 0 to exit: ")
+	place = input("Enter your city, zip code or '0' to exit: ")
 
 	if place == "0":
 		exit()
