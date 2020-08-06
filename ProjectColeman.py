@@ -74,7 +74,7 @@ def main():
 			weatherData = getWeather(location)
 			displayWeather(weatherData)
 		except:
-			print("\nERROR: Invalid Entry!!")
+			print("ERROR: Invalid Entry!!")
 
 		location = getData()
 
